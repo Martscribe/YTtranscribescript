@@ -1,3 +1,13 @@
+<<<<<<< HEAD
 subtitles/
 __pycache__/
 requirements.txt
+=======
+<<<<<<< HEAD
+subtitles/
+__pycache__/
+=======
+subtitles
+requirements.txt
+>>>>>>> bd7f7a86ba649356643076500e011ad1c2ca8be7
+>>>>>>> 2e07b404c6310ed954d304070d1452e600043c6c
