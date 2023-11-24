@@ -53,7 +53,7 @@ def transcribe_and_save_subtitles(video_path, subs_ai, output_directory):
 # Function that processes each link obtained
 def process_video(link):
     subs_ai = SubsAI()
-    subtitles_dir = 'subtitulos'  # Directory for subtitles
+    subtitles_dir = 'subtitles'  # Directory for subtitles
     create_subtitles_directory(subtitles_dir)  # Create directory if it does not exist
     
     try:
@@ -76,7 +76,7 @@ def merge_json_files(directory):
                 merged_data[filename[:-5]] = data  # Use filename as key in combined dictionary
 
     # Save combined information to a new JSON file
-    with open('merged_subtitles.json', 'w') as output_file:
+    with open('subtitles/merged_subtitles.json', 'w') as output_file:
         json.dump(merged_data, output_file, indent=4)
 
 # Main function of the program
@@ -86,7 +86,7 @@ def main():
     for link in links_list:
         process_video(link)  # Process each link
     
-    merge_json_files('subtitulos')  # Combine JSON files after processing
+    merge_json_files('subtitles')  # Combine JSON files after processing
 
 if __name__ == "__main__":
     main()  # Execute main function if the script is the main program
