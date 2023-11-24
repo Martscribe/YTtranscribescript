@@ -2,3 +2,4 @@ ffmpeg_python==0.2.0
 pytube==15.0.0
 Requests==2.31.0
 subsai @ git+https://github.com/abdeladim-s/subsai.git
+scrapetube==2.5.1
